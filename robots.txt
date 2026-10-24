@@ -1,0 +1,22 @@
+User-agent: Bingbot
+Allow: /
+Disallow: /config/
+Disallow: /data/
+Disallow: /research/
+Disallow: /reports/
+
+User-agent: Googlebot
+Allow: /
+Disallow: /config/
+Disallow: /data/
+Disallow: /research/
+Disallow: /reports/
+
+User-agent: *
+Allow: /
+Disallow: /config/
+Disallow: /data/
+Disallow: /research/
+Disallow: /reports/
+
+Sitemap: https://youtu6.buzz/sitemap.xml

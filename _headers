@@ -1,0 +1,36 @@
+# 全局安全与缓存策略规范 (适用于 Cloudflare Pages / 静态托管平台)
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+# 静态静态资源长效缓存 (1年不可变缓存)
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Favicon 及图标
+/favicon.ico
+  Cache-Control: public, max-age=86400
+
+/favicon.png
+  Cache-Control: public, max-age=86400
+
+# HTML 文档采用即时协商缓存 (保证内容更新后访客与爬虫立即可见)
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/
+  Cache-Control: public, max-age=0, must-revalidate
+
+# 爬虫控制文件即时刷新
+/robots.txt
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/sitemap.xml
+  Cache-Control: public, max-age=3600, must-revalidate
+
+# IndexNow 密钥验证文件
+/4b8c7e2d1a9f0e3b5d7a2c4e6f8b0d2a.txt
+  Cache-Control: public, max-age=3600
+  Content-Type: text/plain; charset=utf-8

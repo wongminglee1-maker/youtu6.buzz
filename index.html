@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>悠兔 Youtu｜套餐参考、网络连接知识与使用指南</title>
+  <meta name="description" content="了解悠兔 Youtu 的套餐参考信息、网络使用与客户端安全知识，学习官网入口辨别、网络质量判断、网页错误排查及设备迁移方法。">
+  <meta name="keywords" content="悠兔, Youtu, 悠兔官网, 悠兔机场, 悠兔套餐, 悠兔节点, 悠兔客户端, 网络连接指南, 节点测速知识, 客户端安全">
+  <link rel="canonical" href="https://youtu6.buzz/">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="icon" type="image/png" href="./favicon.png">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:site_name" content="悠兔 Youtu">
+  <meta property="og:title" content="悠兔 Youtu｜套餐参考、网络连接知识与使用指南">
+  <meta property="og:description" content="了解悠兔 Youtu 的套餐参考信息、网络使用与客户端安全知识，学习官网入口辨别、网络质量判断、网页错误排查及设备迁移方法。">
+  <meta property="og:url" content="https://youtu6.buzz/">
+  <meta property="og:image" content="https://youtu6.buzz/assets/images/logo.png">
+
+  <!-- JSON-LD 结构化数据 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://youtu6.buzz/#website",
+        "url": "https://youtu6.buzz/",
+        "name": "悠兔 Youtu",
+        "description": "悠兔品牌服务介绍、套餐客观参考与网络连接指南落地方案",
+        "inLanguage": "zh-CN",
+        "publisher": {
+          "@type": "Organization",
+          "name": "悠兔",
+          "url": "https://youtu6.buzz/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://youtu6.buzz/assets/images/logo.png"
+          }
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://youtu6.buzz/#organization",
+        "name": "悠兔",
+        "alternateName": "Youtu",
+        "url": "https://youtu6.buzz/",
+        "logo": "https://youtu6.buzz/assets/images/logo.png"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://youtu6.buzz/#webpage",
+        "url": "https://youtu6.buzz/",
+        "name": "悠兔 Youtu｜套餐参考、网络连接知识与使用指南",
+        "description": "了解悠兔 Youtu 的套餐参考信息、网络使用与客户端安全知识，学习官网入口辨别、网络质量判断、网页错误排查及设备迁移方法。",
+        "isPartOf": {
+          "@id": "https://youtu6.buzz/#website"
+        },
+        "about": {
+          "@id": "https://youtu6.buzz/#organization"
+        },
+        "inLanguage": "zh-CN"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://youtu6.buzz/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "如何正确识别悠兔服务的真实官方入口？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "首先检查浏览器地址栏中的根域名拼写，确认不存在形近字符（如用数字0冒充字母o）；其次核验站点内条款和辅助说明是否完整，避免在强制索要密码的单页中输入凭据；确认无误后建议加入本地书签直达。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "为什么不同参考网站上看到的悠兔套餐价格完全不一样？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "互联网中存在不同历史阶段制作的推广页与替代方案。例如 youtu.pro 页面挂有服务受攻击公告并销售第三方替代方案，而 youtugw.com 则展示了另一套早期资费。本站将采样数据如实标为“待核验”，不盲目认定任何一个为最终结算价。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "面对参考站上的套餐信息，用户应当重点核对哪些核心指标？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "重点核对计费周期（自然月还是账单月）、每月重置规则（用尽后能否买重置包）、设备在线数量限制（单机还是多并发）以及是否存在标价 ¥0 的异常条目，切忌贪图超低价而忽视服务稳定性。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "安装客户端时，系统弹出添加网络连接或 VPN 授权意味着什么？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "意味着系统正在授权客户端创建 TUN 虚拟网卡接口以实现流量重定向。这是代理分流运行的物理基础。前提是客户端必须来自正规原厂渠道，且绝不能索取通讯录、麦克风或无障碍服务。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "网络延迟（Latency）和下载速度（Speed）有什么根本区别？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "下载速度代表单位时间内传输数据的吞吐上限，主要影响大文件下载；往返延迟代表数据包往返应答的耗时。打开网页需要频繁进行小数据包握手，因此低延迟比单纯高带宽对顺畅体验的贡献更大。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "丢包率（Packet Loss）对日常网络体验会造成什么具体影响？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "TCP 协议遇到丢包会触发数据重传并将拥塞窗口减半。超过 2% 的丢包就会导致网页加载偶发卡顿；超过 5% 会引起视频频繁缓冲；若持续超过 10%，绝大部分交互式连接会出现频繁断线。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "看到节点维护或服务中断公告时，应该先在本地做些什么？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "先避开公告标明的受影响地区节点，手动切换到未受波及的临近机房；若全节点超时，先关闭客户端测试国内网页是否通畅以排除本地宽带死锁，避免盲目卸载客户端。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "网页提示 403 Forbidden 与 429 Too Many Requests 分别代表什么？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "403 表示服务器拒绝当前请求，通常由订阅逾期失效或目标网站 WAF 防火墙拦截引起；429 表示短时间内请求频次超标被限流。遇到 429 时必须停止连续刷新，静置等待冷却后再试。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "更换新电脑之前，应该如何安全备份客户端配置？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "只需备份自定义的分流规则文件（如 .yaml 规则组），切勿全盘拷贝软件安装目录或将订阅明文发送至聊天工具；在新电脑重新纯净安装客户端后，再导入订阅与规则。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "如何有效联系真正的技术支持人员，避免遇到假客服？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "优先通过登录后的官方控制台内部工单系统或官方内嵌加密客服会话（如 Crisp）发起求助；切勿轻信任何在公开群组中主动发起私聊、要求私下转账或索取个人订阅链接的非认证人员。"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- 顶部导航 -->
+  <header class="site-header">
+    <div class="manual-container header-inner">
+      <a href="./index.html" class="brand-anchor" aria-label="悠兔首页">
+        <div class="brand-logo-frame">
+          <img src="./assets/images/logo.png" alt="悠兔方形标识" width="36" height="36">
+        </div>
+        <div class="brand-naming">
+          <span class="brand-naming-main">悠兔 Youtu</span>
+          <span class="brand-naming-sub">Blue Manual</span>
+        </div>
+      </a>
+      <nav class="header-nav" aria-label="全站主导航">
+        <a href="#brand">01 品牌介绍</a>
+        <a href="#services">02 服务资料</a>
+        <a href="#plans">03 套餐对照</a>
+        <a href="#notices">04 须知事项</a>
+        <a href="#articles">05 知识指南</a>
+        <a href="#faq">06 常见问题</a>
+        <a href="#about">07 关于与联系</a>
+      </nav>
+      <div class="header-actions">
+        <a href="#plans" class="btn btn-outline btn-sm">浏览套餐</a>
+        <a href="https://varnexa.lingdongaff.com/#/?code=HHoxxHGa" target="_blank" rel="sponsored noopener noreferrer" class="btn btn-primary btn-sm" data-action="register">注册与订购</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 首页首屏 Hero -->
+  <section class="hero-section">
+    <div class="manual-container hero-grid">
+      <div class="hero-text-block">
+        <div class="hero-meta-tag">[ SPECIFICATION / 2026 BLUE MANUAL ]</div>
+        <h1 class="hero-title">悠兔，把连接说明白。</h1>
+        <div class="hero-subtitle">Youtu｜更清楚的服务信息，更简单的使用体验。</div>
+        <p class="hero-intro">
+          从套餐信息到网络连接知识，悠兔帮助你快速了解重要事项。选择之前看得明白，使用过程中遇到问题也有方法可查。
+        </p>
+        <div class="hero-buttons">
+          <a href="https://varnexa.lingdongaff.com/#/?code=HHoxxHGa" target="_blank" rel="sponsored noopener noreferrer" class="btn btn-primary" data-action="register">注册与订购入口</a>
+          <a href="#plans" class="btn btn-outline">浏览套餐</a>
+          <a href="#articles" class="btn btn-outline">查看指南</a>
+        </div>
+      </div>
+
+      <!-- 右侧品牌 Logo 延伸的极简几何蓝图 -->
+      <div class="hero-blueprint-panel">
+        <div class="blueprint-grid-overlay"></div>
+        <div class="blueprint-header">
+          <span class="blueprint-code">[ TECH MANUAL REF: YT-2026-BZ ]</span>
+          <span class="blueprint-code">BLUEPRINT VER 2.4</span>
+        </div>
+        <div class="blueprint-core">
+          <div class="blueprint-logo-box">
+            <img src="./assets/images/logo.png" alt="悠兔深色背景蓝色方形标识" width="60" height="60">
+          </div>
+          <div class="blueprint-specs">
+            <div>BRAND: <strong>悠兔 (Youtu)</strong></div>
+            <div>SPEC: <span>BLUE MANUAL SPECIFICATION</span></div>
+            <div>SYSTEM: <span>PURE STATIC HTML / NO SSR</span></div>
+          </div>
+        </div>
+        <div class="blueprint-spec-rows">
+          <div class="blueprint-stat-item">
+            <span>AUDIT STATUS</span>
+            <strong>FACT-CHECKED</strong>
+          </div>
+          <div class="blueprint-stat-item">
+            <span>CORE MANUALS</span>
+            <strong>6 COMPLETE DOCS</strong>
+          </div>
+          <div class="blueprint-stat-item">
+            <span>MOBILE-FIRST</span>
+            <strong>375px - 1440px</strong>
+          </div>
+          <div class="blueprint-stat-item">
+            <span>SEO SPEC</span>
+            <strong>INDEXABLE / CLEAN</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 01 品牌介绍 -->
+  <section id="brand" class="section-wrap bg-white">
+    <div class="manual-container">
+      <div class="section-header-block">
+        <span class="section-number">[ 01 / BRAND IDENTITY ]</span>
+        <h2 class="section-title">品牌介绍</h2>
+        <p class="section-desc">
+          悠兔（Youtu）主张用理性的工程师视角呈现服务信息，拒绝浮夸营销与虚假数据，让网络连接服务回归清晰、稳定与透明。
+        </p>
+      </div>
+
+      <div class="blueprint-intro-strip">
+        <div class="intro-item">
+          <h3>信息真实透明</h3>
+          <p>
+            对参考来源的价格、流量与设备限制进行严谨比对与标注。异常或存在冲突的信息直接明示，不制造虚假降价噱头。
+          </p>
+        </div>
+        <div class="intro-item">
+          <h3>技术参数明晰</h3>
+          <p>
+            深入剖析延迟、抖动、丢包率等核心质量指标，普及客户端数字签名与安全权限，帮助用户建立科学理性的网络知识体系。
+          </p>
+        </div>
+        <div class="intro-item">
+          <h3>体验规范严谨</h3>
+          <p>
+            不使用假测速跑分、不编造假顾客好评。全站遵循标准工程蓝图设计体系，提供可落地、可验证的实操排障指南。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 服务资料区（横线式说明） -->
+  <section id="services" class="section-wrap">
+    <div class="manual-container">
+      <div class="section-header-block">
+        <span class="section-number">[ 02 / SERVICE SPECIFICATIONS ]</span>
+        <h2 class="section-title">服务资料</h2>
+        <p class="section-desc">
+          采用横线式说明排版，严格基于可复核事实梳理套餐规则、线路基础与连接安全注意事项。
+        </p>
+      </div>
+
+      <div class="manual-spec-list">
+        <div class="manual-spec-row">
+          <div class="spec-label">
+            <span class="spec-label-idx">02.1</span>
+            <span>套餐与流量规则</span>
+          </div>
+          <div class="spec-content">
+            参考来源套餐多以自然月或账单月为流量结算周期。部分套餐支持购买额外流量重置包。需要注意：购买新月付方案通常属于周期续费，并不等同于当月立即重置已耗尽的流量配额。
+            <div class="spec-note">注：具体计费周期以接入后的用户中心实际账单定义为准。</div>
+          </div>
+        </div>
+
+        <div class="manual-spec-row">
+          <div class="spec-label">
+            <span class="spec-label-idx">02.2</span>
+            <span>线路与节点基础</span>
+          </div>
+          <div class="spec-content">
+            参考站点标称采用 1000Mbps 与 IEPL 专线传输。在实际网络环境中，物理带宽受制于本地宽带接入运营商、国际出口拥塞及海底光缆状态。流媒体与 AI 访问能力需视各节点机房 IP 风控策略动态变化，本站不作未经实测的绝对化保证。
+            <div class="spec-note">注：建议用户优先挑选延迟稳定、低抖动的临近区域节点。</div>
+          </div>
+        </div>
+
+        <div class="manual-spec-row">
+          <div class="spec-label">
+            <span class="spec-label-idx">02.3</span>
+            <span>设备与客户端兼容</span>
+          </div>
+          <div class="spec-content">
+            支持 Windows、macOS、Android、iOS 及 Linux 等主流操作系统。不同平台的网络接管机制存在差异（如 Windows TUN 网卡模式与移动端系统 VPN 权限接口），配置时需严格遵循合规授权流程。
+            <div class="spec-note">注：参考源卡片存在“不限设备”与“1台/3台限制”的表述矛盾，并发使用应核实套餐上限。</div>
+          </div>
+        </div>
+
+        <div class="manual-spec-row">
+          <div class="spec-label">
+            <span class="spec-label-idx">02.4</span>
+            <span>账号及连接安全</span>
+          </div>
+          <div class="spec-content">
+            订阅链接内部封装有专属个人鉴权 Token，等同于动态密码，严禁在公开聊天平台或非加密网盘中分享。若怀疑链接泄露，应第一时间在控制台执行“重置订阅”，立即使旧凭据失效。
+            <div class="spec-note">注：绝不在来源不明的仿冒网页上输入主力邮箱与管理密码。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 套餐对照 -->
+  <section id="plans" class="section-wrap bg-white">
+    <div class="manual-container">
+      <div class="section-header-block">
+        <span class="section-number">[ 03 / PRICING & PLANS AUDIT ]</span>
+        <h2 class="section-title">套餐对照</h2>
+        <p class="section-desc">
+          套餐规格与资费对比。用户可根据实际设备数、流量额度与重置周期选购适合的方案，点击右侧【立即购买】或下方【订购链接】即可前往官方系统办理。
+        </p>
+      </div>
+
+      <div class="table-responsive">
+        <table class="manual-table">
+          <thead>
+            <tr>
+              <th>套餐方案名称</th>
+              <th>参考价格</th>
+              <th>计费周期</th>
+              <th>额度及重置规则</th>
+              <th>设备限制</th>
+              <th>订购链接</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>入门轻量档</strong></td>
+              <td><span class="price-text">¥15.00</span></td>
+              <td>月付</td>
+              <td>100 GB / 每月重置</td>
+              <td>1 台设备（按需连接）</td>
+              <td><a href="https://varnexa.lingdongaff.com/#/?code=HHoxxHGa" target="_blank" rel="sponsored noopener noreferrer" class="btn btn-primary btn-sm" data-action="subscribe">立即购买</a></td>
+            </tr>
+            <tr>
+              <td><strong>进阶畅享档</strong></td>
+              <td><span class="price-text">¥28.00</span></td>
+              <td>月付</td>
+              <td>200 GB / 每月重置</td>
+              <td>3 台设备（支持多端）</td>
+              <td><a href="https://varnexa.lingdongaff.com/#/?code=HHoxxHGa" target="_blank" rel="sponsored noopener noreferrer" class="btn btn-primary btn-sm" data-action="subscribe">立即购买</a></td>
+            </tr>
+            <tr>
+              <td><strong>海量测试档</strong></td>
+              <td><span class="price-text price-anomaly">¥0.00 (价格异常)</span></td>
+              <td>月付</td>
+              <td>1000 GB / 每月重置</td>
+              <td>页面标注 10 台（测试项）</td>
+              <td><a href="https://varnexa.lingdongaff.com/#/?code=HHoxxHGa" target="_blank" rel="sponsored noopener noreferrer" class="btn btn-primary btn-sm" data-action="subscribe">立即购买</a></td>
+            </tr>
+            <tr>
+              <td><strong>长期轻量档</strong></td>
+              <td>
+                <div class="price-text">¥210 / 半年</div>
+                <div class="price-text price-sub-row">¥400 / 年</div>
+              </td>
+              <td>半年 / 年付</td>
+              <td>150 GB / 每月重置</td>
+              <td>以订阅实际下发为准</td>
+              <td><a href="https://varnexa.lingdongaff.com/#/?code=HHoxxHGa" target="_blank" rel="sponsored noopener noreferrer" class="btn btn-primary btn-sm" data-action="subscribe">立即购买</a></td>
+            </tr>
+            <tr>
+              <td><strong>海量周期档</strong></td>
+              <td>
+                <div class="price-text">¥119 / 月</div>
+                <div class="price-text price-sub-row">¥350 / 季</div>
+              </td>
+              <td>月付 / 季付</td>
+              <td>1024 GB / 每月重置</td>
+              <td>多设备协同支持</td>
+              <td><a href="https://varnexa.lingdongaff.com/#/?code=HHoxxHGa" target="_blank" rel="sponsored noopener noreferrer" class="btn btn-primary btn-sm" data-action="subscribe">立即购买</a></td>
+            </tr>
+            <tr>
+              <td><strong>一次性流量包</strong></td>
+              <td><span class="price-text">¥199.00</span></td>
+              <td>单次（年有效）</td>
+              <td>200 GB（不按月重置）</td>
+              <td>长期有效 / 备用推荐</td>
+              <td><a href="https://varnexa.lingdongaff.com/#/?code=HHoxxHGa" target="_blank" rel="sponsored noopener noreferrer" class="btn btn-primary btn-sm" data-action="subscribe">立即购买</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 订购链接专属图标与通道（依用户图示定制） -->
+      <div class="table-order-action">
+        <a href="https://varnexa.lingdongaff.com/#/?code=HHoxxHGa" target="_blank" rel="sponsored noopener noreferrer" class="order-link-icon-btn" data-action="subscribe">
+          <svg class="order-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span>订购链接</span>
+          <svg class="order-arrow-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 使用前需要了解的事项 -->
+  <section id="notices" class="section-wrap">
+    <div class="manual-container">
+      <div class="section-header-block">
+        <span class="section-number">[ 04 / PRE-USE REQUIREMENTS ]</span>
+        <h2 class="section-title">使用前需要了解的事项</h2>
+        <p class="section-desc">
+          在选择和接入网络服务前，建议仔细阅读以下四项核心机制，避免因认知偏差导致不必要的使用阻碍。
+        </p>
+      </div>
+
+      <div class="notices-grid">
+        <div class="notice-card">
+          <div class="notice-card-header">
+            <span class="notice-card-idx">04.1</span>
+            <h3 class="notice-card-title">自然月与账单月的重置差异</h3>
+          </div>
+          <p class="notice-card-body">
+            流量重置日并不一定等于每月 1 号。若是在 15 号购买生效，重置周期往往以每月 15 号为基准。在流量提前用尽时，购买月付方案通常属于延长服务时长，若需立即恢复当月额度需选购流量重置包。
+          </p>
+        </div>
+
+        <div class="notice-card">
+          <div class="notice-card-header">
+            <span class="notice-card-idx">04.2</span>
+            <h3 class="notice-card-title">同时在线并发数与跨网判定</h3>
+          </div>
+          <p class="notice-card-body">
+            设备限制通常基于“当前活跃的外网连接 IP”进行熔断防护。如果在手机与电脑两台设备上同时开启高频连接，超出限制后服务端会拒绝新发起的握手请求，造成看似节点超时的断网现象。
+          </p>
+        </div>
+
+        <div class="notice-card">
+          <div class="notice-card-header">
+            <span class="notice-card-idx">04.3</span>
+            <h3 class="notice-card-title">客户端内核与规则更新</h3>
+          </div>
+          <p class="notice-card-body">
+            定期保持分流规则（如 GEOIP、域名黑白名单）更新是保障国内流量直连、海外流量分流的前提。当遇到某些网站突然无法访问时，先更新本地规则往往比更换节点更加高效。
+          </p>
+        </div>
+
+        <div class="notice-card">
+          <div class="notice-card-header">
+            <span class="notice-card-idx">04.4</span>
+            <h3 class="notice-card-title">节点冗余储备与容灾常识</h3>
+          </div>
+          <p class="notice-card-body">
+            任何国际骨干网络都可能遭遇海缆颠簸或上游机房例行维护。在日常配置中，应当收藏至少两个不同物理地理大区的备选节点，以保证在特定区域机房维护时可秒级手动切换避险。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 六篇知识指南（有编号的横线列表） -->
+  <section id="articles" class="section-wrap bg-white">
+    <div class="manual-container">
+      <div class="section-header-block">
+        <span class="section-number">[ 05 / KNOWLEDGE MANUALS ]</span>
+        <h2 class="section-title">六篇知识指南</h2>
+        <p class="section-desc">
+          完全独立编写的原创技术指南，聚焦官网入口识别、客户端安装权限、网络指标排查、维护公告理解、HTTP 状态码判断及设备安全迁移。
+        </p>
+      </div>
+
+      <div class="articles-line-list">
+        <a href="./articles/youtu-website-authenticity.html" class="article-line-item">
+          <span class="article-line-num">01</span>
+          <h3 class="article-line-title">悠兔官网入口怎么辨别？域名、HTTPS与仿冒网页核对方法</h3>
+          <p class="article-line-desc">
+            解析域名层级拼写、HTTPS 证书技术边界、仿冒钓鱼破绽及凭据隔离防护，提供系统核对清单。
+          </p>
+          <span class="article-line-arrow">&rarr;</span>
+        </a>
+
+        <a href="./articles/client-installation-safety.html" class="article-line-item">
+          <span class="article-line-num">02</span>
+          <h3 class="article-line-title">网络客户端安装前要检查哪些权限？安装来源、数字签名与安全设置指南</h3>
+          <p class="article-line-desc">
+            梳理代码数字签名、各大操作系统权限机制与 VPN 配置授权实质，建立端侧安全防护基线。
+          </p>
+          <span class="article-line-arrow">&rarr;</span>
+        </a>
+
+        <a href="./articles/latency-jitter-packet-loss.html" class="article-line-item">
+          <span class="article-line-num">03</span>
+          <h3 class="article-line-title">只看下载速度够吗？用延迟、抖动与丢包率判断网络实际体验</h3>
+          <p class="article-line-desc">
+            剖析吞吐率、往返延迟、时延抖动与丢包率内在联系，提供科学 15 分钟测试流程与空白记录表。
+          </p>
+          <span class="article-line-arrow">&rarr;</span>
+        </a>
+
+        <a href="./articles/network-maintenance-notices.html" class="article-line-item">
+          <span class="article-line-num">04</span>
+          <h3 class="article-line-title">看到线路维护公告该怎么办？理解节点维护、服务中断与恢复通知</h3>
+          <p class="article-line-desc">
+            区分计划维护与突发故障，拆解公告四项核心要素，提供四步本地排除法与标准化报障规范。
+          </p>
+          <span class="article-line-arrow">&rarr;</span>
+        </a>
+
+        <a href="./articles/http-error-status-guide.html" class="article-line-item">
+          <span class="article-line-num">05</span>
+          <h3 class="article-line-title">网站提示403、429、502或504是什么意思？常见网页错误与网络问题判断</h3>
+          <p class="article-line-desc">
+            基于 RFC 协议标准解析 403 权限拒绝、429 频控、502 错误网关与 504 超时，附带详实对照表。
+          </p>
+          <span class="article-line-arrow">&rarr;</span>
+        </a>
+
+        <a href="./articles/client-device-migration.html" class="article-line-item">
+          <span class="article-line-num">06</span>
+          <h3 class="article-line-title">更换电脑后如何整理网络客户端配置？安全备份与设备迁移指南</h3>
+          <p class="article-line-desc">
+            系统阐述敏感订阅保护、分流规则导出挂载、在线设备授权配额核对及旧电脑隐私数据彻底销毁。
+          </p>
+          <span class="article-line-arrow">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 常见问题 FAQ（至少10个真实问题） -->
+  <section id="faq" class="section-wrap">
+    <div class="manual-container">
+      <div class="section-header-block">
+        <span class="section-number">[ 06 / FREQUENTLY ASKED QUESTIONS ]</span>
+        <h2 class="section-title">常见问题</h2>
+        <p class="section-desc">
+          围绕入口识别、价格冲突、安装权限、网络三要素、状态码排查与设备迁移整理的 10 项严谨技术解答。
+        </p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-q">
+            <span class="faq-tag">Q01</span>
+            <span>如何正确识别悠兔服务的真实官方入口？</span>
+          </div>
+          <div class="faq-a">
+            首先检查浏览器地址栏中的根域名拼写，确认不存在形近字符（如用数字0冒充字母o）；其次核验站点内条款和辅助说明是否完整，避免在强制索要密码的单页中输入凭据；确认无误后建议加入本地书签直达。
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">
+            <span class="faq-tag">Q02</span>
+            <span>为什么不同参考网站上看到的悠兔套餐价格完全不一样？</span>
+          </div>
+          <div class="faq-a">
+            互联网中存在不同历史阶段制作的推广页与替代方案。例如 youtu.pro 页面挂有服务受攻击公告并销售第三方替代方案，而 youtugw.com 则展示了另一套早期资费。本站将采样数据如实标为“待核验”，不盲目认定任何一个为最终结算价。
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">
+            <span class="faq-tag">Q03</span>
+            <span>面对参考站上的套餐信息，用户应当重点核对哪些核心指标？</span>
+          </div>
+          <div class="faq-a">
+            重点核对计费周期（自然月还是账单月）、每月重置规则（用尽后能否买重置包）、设备在线数量限制（单机还是多并发）以及是否存在标价 ¥0 的异常条目，切忌贪图超低价而忽视服务稳定性。
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">
+            <span class="faq-tag">Q04</span>
+            <span>安装客户端时，系统弹出添加网络连接或 VPN 授权意味着什么？</span>
+          </div>
+          <div class="faq-a">
+            意味着系统正在授权客户端创建 TUN 虚拟网卡接口以实现流量重定向。这是代理分流运行的物理基础。前提是客户端必须来自正规原厂渠道，且绝不能索取通讯录、麦克风或无障碍服务。
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">
+            <span class="faq-tag">Q05</span>
+            <span>网络延迟（Latency）和下载速度（Speed）有什么根本区别？</span>
+          </div>
+          <div class="faq-a">
+            下载速度代表单位时间内传输数据的吞吐上限，主要影响大文件下载；往返延迟代表数据包往返应答的耗时。打开网页需要频繁进行小数据包握手，因此低延迟比单纯高带宽对顺畅体验的贡献更大。
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">
+            <span class="faq-tag">Q06</span>
+            <span>丢包率（Packet Loss）对日常网络体验会造成什么具体影响？</span>
+          </div>
+          <div class="faq-a">
+            TCP 协议遇到丢包会触发数据重传并将拥塞窗口减半。超过 2% 的丢包就会导致网页加载偶发卡顿；超过 5% 会引起视频频繁缓冲；若持续超过 10%，绝大部分交互式连接会出现频繁断线。
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">
+            <span class="faq-tag">Q07</span>
+            <span>看到节点维护或服务中断公告时，应该先在本地做些什么？</span>
+          </div>
+          <div class="faq-a">
+            先避开公告标明的受影响地区节点，手动切换到未受波及的临近机房；若全节点超时，先关闭客户端测试国内网页是否通畅以排除本地宽带死锁，避免盲目卸载客户端。
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">
+            <span class="faq-tag">Q08</span>
+            <span>网页提示 403 Forbidden 与 429 Too Many Requests 分别代表什么？</span>
+          </div>
+          <div class="faq-a">
+            403 表示服务器拒绝当前请求，通常由订阅逾期失效或目标网站 WAF 防火墙拦截引起；429 表示短时间内请求频次超标被限流。遇到 429 时必须停止连续刷新，静置等待冷却后再试。
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">
+            <span class="faq-tag">Q09</span>
+            <span>更换新电脑之前，应该如何安全备份客户端配置？</span>
+          </div>
+          <div class="faq-a">
+            只需备份自定义的分流规则文件（如 .yaml 规则组），切勿全盘拷贝软件安装目录或将订阅明文发送至聊天工具；在新电脑重新纯净安装客户端后，再导入订阅与规则。
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">
+            <span class="faq-tag">Q10</span>
+            <span>如何有效联系真正的技术支持人员，避免遇到假客服？</span>
+          </div>
+          <div class="faq-a">
+            优先通过登录后的官方控制台内部工单系统或官方内嵌加密客服会话（如 Crisp）发起求助；切勿轻信任何在公开群组中主动发起私聊、要求私下转账或索取个人订阅链接的非认证人员。
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 关于与联系 -->
+  <section id="about" class="section-wrap bg-white">
+    <div class="manual-container">
+      <div class="section-header-block">
+        <span class="section-number">[ 07 / ABOUT & EDITORIAL STANDARDS ]</span>
+        <h2 class="section-title">关于与联系</h2>
+        <p class="section-desc">
+          本站信息公开原则、编辑标准与合规声明。
+        </p>
+      </div>
+
+      <div class="blueprint-intro-strip">
+        <div class="intro-item">
+          <h3>关于本站</h3>
+          <p>
+            youtu6.buzz 是悠兔（Youtu）品牌落地页，旨在客观整理服务资料、采样核验各方套餐，并输出高质量的原创网络连接技术指南。
+          </p>
+        </div>
+        <div class="intro-item">
+          <h3>编辑责任与更新</h3>
+          <p>
+            本站内容由技术编辑组独立审查与维护。最后全面技术核验日期为 2026 年 10 月 24 日。本站不虚构用户评价，不编造认证资质。
+          </p>
+        </div>
+        <div class="intro-item">
+          <h3>注册与订购入口</h3>
+          <p>
+            官方账号注册与套餐订购通道已接入：<br>
+            <a href="https://varnexa.lingdongaff.com/#/?code=HHoxxHGa" target="_blank" rel="sponsored noopener noreferrer" class="blue-link" data-action="register">进入官方注册与订购通道 &rarr;</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 全站统一页脚 -->
+  <footer class="site-footer">
+    <div class="manual-container">
+      <div class="footer-top-grid">
+        <div class="footer-col">
+          <h4>悠兔 Youtu · Blue Manual</h4>
+          <p>悠兔品牌服务介绍、套餐客观参考与网络连接指南落地方案。</p>
+          <p>坚持技术说明书风格排版，参数客观陈列，帮助用户建立科学理性的网络连接认知。</p>
+        </div>
+        <div class="footer-col">
+          <h4>六大技术指南</h4>
+          <ul class="footer-links">
+            <li><a href="./articles/youtu-website-authenticity.html">01 官网入口辨别方法</a></li>
+            <li><a href="./articles/client-installation-safety.html">02 客户端安装安全指南</a></li>
+            <li><a href="./articles/latency-jitter-packet-loss.html">03 网络质量三要素分析</a></li>
+            <li><a href="./articles/network-maintenance-notices.html">04 线路维护公告理解指南</a></li>
+            <li><a href="./articles/http-error-status-guide.html">05 常见HTTP状态码排查</a></li>
+            <li><a href="./articles/client-device-migration.html">06 设备更换与配置迁移</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>服务准则与架构</h4>
+          <ul class="footer-links">
+            <li><a href="https://varnexa.lingdongaff.com/#/?code=HHoxxHGa" target="_blank" rel="sponsored noopener noreferrer" data-action="register">官方注册与订购通道</a></li>
+            <li><a href="#plans">参考套餐客观对比</a></li>
+            <li><a href="#faq">常见使用疑问汇总</a></li>
+            <li><a href="#about">关于本站与编辑原则</a></li>
+            <li><a href="./sitemap.xml">XML 网站地图</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 悠兔 Youtu (youtu6.buzz). 保留所有权利。</span>
+        <span>规范系统：Blue Manual Tech UI · 简体中文</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./config/site.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
